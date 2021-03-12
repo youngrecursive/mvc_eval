@@ -104,13 +104,6 @@ header nav ul li a:hover {
 
 main {}
 
-.cars img {
-    height: 100px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-}
-
 /* footer */
 
 #footer {
