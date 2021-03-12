@@ -3,11 +3,11 @@
 <form action="index.php?page=login" method="post">
 
 <label for="email">Email</label>
-<input type="text" name="email">
+<input type="text" name="email" required>
 
 
 <label for="password">Mot de passe</label>
-<input type="password" name="password">
+<input type="password" name="password" required>
 
 <input type="submit" value="Se connecter">
 
