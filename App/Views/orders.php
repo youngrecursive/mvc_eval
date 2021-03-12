@@ -6,7 +6,7 @@
             <th>Date de commande</th>
             <th>Date souhaitée</th>
             <th>Date envoi</th>
-            <th>statut</th>
+            <th>Statut</th>
             <th>Commentaires</th>
             <th>Numéro de client</th>
         </tr>
