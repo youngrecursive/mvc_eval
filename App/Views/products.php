@@ -1,4 +1,16 @@
 <section id="listproducts">
+  <form class="" action="" method="post">
+    <select class="" name="select">
+      <option value="Classic Cars">Classic Cars</option>
+      <option value="Motorcycles">Classic Cars</option>
+      <option value="Planes">Planes</option>
+      <option value="Ships">Ships</option>
+      <option value="Trains">Trains</option>
+      <option value="Trucks and Buses">Trucks and Buses</option>
+      <option value="Vintage Cars">Vintage Cars</option>
+    </select>
+    <input type="submit" name="submitted" value="Envoyer">
+  </form>
 
   <table style="width:100%">
     <tr>

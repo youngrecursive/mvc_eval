@@ -16,6 +16,10 @@ class ProductsController extends Controller{
 
         $products = $productModel->readAll();
         $this->render("products", ["products" => $products]);
+
+        if(!empty($_POST['submitted'])){
+          echo $_POST['select'];
+        }
     }
 
 }
