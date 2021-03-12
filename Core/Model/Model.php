@@ -66,7 +66,11 @@ class Model{
     {
 
         return $this->db->getData("SELECT * FROM $this->table WHERE customerNumber = $id", true);
-        
+
+    }
+
+    public function jointurecustomer($id) {
+        return $this->db->getData("SELECT * FROM payments INNER JOIN `customers` ON payments.customerNumber = customers.customerNumber WHERE payments.customerNumber = $id");
     }
 
     /**

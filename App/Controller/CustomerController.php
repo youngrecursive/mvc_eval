@@ -28,8 +28,8 @@ class CustomerController extends Controller{
         else {
           die('404');
         }
-        $customer = $detailcustomerModel->readOne($id);
-        $this->render("detailcustomer", ["customer" => $customer]);
+        $payments = $detailcustomerModel->jointurecustomer($id);
+        $this->render("detailcustomer", ["payments" => $payments]);
     }
 
 }
