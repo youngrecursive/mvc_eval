@@ -1,5 +1,5 @@
 <?php
-namespace App\Login;
+namespace App\Controller;
 
 
 use App\Model\LoginModel;
@@ -13,6 +13,9 @@ class LoginController extends Controller{
     {
 
       $LoginModel = new LoginModel();
+      $LoginModel->SelectLogin();
+      
+
       $this->render("login");
     }
 
