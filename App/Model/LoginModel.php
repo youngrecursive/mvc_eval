@@ -17,6 +17,11 @@ class LoginModel extends Model{
      * @var string
      */
 
+    public function SelectLogin()
+    {
+        $statement = "SELECT * FROM user";
 
+        return $this->db->getData($statement,true);
+    }
 
 }

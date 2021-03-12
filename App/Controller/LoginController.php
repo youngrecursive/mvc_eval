@@ -1,5 +1,5 @@
 <?php
-namespace App\Login;
+namespace App\Controller;
 
 
 use App\Model\LoginModel;
