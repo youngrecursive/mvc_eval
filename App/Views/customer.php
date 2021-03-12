@@ -11,6 +11,9 @@
   </tr>
 
   <?php
+  //on génere un tableau pour afficher la liste des clients on aurait pu mettre la redirection mais on manque de temps
+  //SELECT customerNumber, paymentDate, amount FROM payments WHERE customerNumber = 'id dans lurl' pour avoir la liste des paiments par user
+  //SELECT customerNumber, checkNumber, paymentDate, amount FROM payments WHERE customerNomber = 'id dans lurl' le détail des facture
   foreach ($customers as $customer) {
     echo '<tr>';
     echo '<td>' . $customer->customerName . '</td>';

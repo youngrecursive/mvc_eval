@@ -4,8 +4,8 @@ namespace App\Controller;
 use App\Model\ProductsModel;
 use App\Model\CustomersModel;
 use App\Model\OrdersModel;
+use App\Model\LoginModel;
 use Core\Controller\Controller;
-
 
 class DefautController extends Controller{
 
@@ -15,6 +15,7 @@ class DefautController extends Controller{
       $productModel = new ProductsModel();
       $customerModel = new CustomersModel();
       $orderModel = new OrdersModel();
+      $LoginModel = new LoginModel();
 
       $products = $productModel->readAll();
       $countproducts = $productModel->countProducts();
