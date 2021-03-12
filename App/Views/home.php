@@ -1,13 +1,10 @@
-<?php
 
-
-echo 'salut!!!!';
-?>
-
-<div class="cars">
-    <a href="#" target="_blank"><img src="../img/img1.png" alt=""></a>
-    <a href="#" target="_blank"><img src="../img/img2.png" alt=""></a>
-    <a href="#" target="_blank"><img src="../img/img3.png" alt=""></a>
-    <a href="#" target="_blank"><img src="../img/img4.png" alt=""></a>
-
-</div>
+<a href="index.php?page=customer">Nombre de clients : <?= $countOrders->count; ?></a>
+<br>
+<a href="index.php?page=products">Nombre de Produits : <?= $countProducts->count; ?></a>
+<br>
+<a href="#">Nombre de commandes : <?= $countOrders->count; ?></a>
+<br>
+<a href="#">Nombre de commandes envoyées : <?= $countOrdersSh->count; ?></a>
+<br>
+<a href="#">Nombre de commandes annulées : <?= $countOrdersCan->count; ?></a>
