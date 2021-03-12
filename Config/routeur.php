@@ -1,6 +1,7 @@
 <?php
 
 use App\Controller\DefautController;
+use App\Controller\CustomerController;
 
 
 if (!empty($_GET["page"])) {
@@ -13,5 +14,9 @@ switch ($page) {
     case 'home':
         $home = new DefautController();
         $home->home();
+        break;
+    case 'customer':
+        $customer = new CustomerController();
+        $customer->customer();
         break;
 }
