@@ -12,6 +12,7 @@
   </tr>
 
   <?php
+
   foreach ($customers as $customer) { ?>
     <tr>
       <td><a href="index.php?page=detailcustomer&id=<?= $customer->customerNumber ?>"><?= $customer->customerName ?> </a> </td>
@@ -21,6 +22,8 @@
       <td><?= $customer->city ?></td>
       <td><?= $customer->state ?></td>
     </tr>
+
+
 
   <?php }
   ?>
