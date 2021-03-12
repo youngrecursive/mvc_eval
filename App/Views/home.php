@@ -1,5 +1,5 @@
 
-<a href="index.php?page=customer">Nombre de clients : <?= $countOrders->count; ?></a>
+<a href="index.php?page=customer">Nombre de clients : <?= $countCustomers->count; ?></a>
 <br>
 <a href="index.php?page=products">Nombre de Produits : <?= $countProducts->count; ?></a>
 <br>

@@ -65,7 +65,12 @@ class Model{
     public function readOne(int $id):object
     {
 
-        return $this->db->getData("SELECT * FROM $this->table WHERE id = $id", true);
+        return $this->db->getData("SELECT * FROM $this->table WHERE customerNumber = $id", true);
+
+    }
+
+    public function jointurecustomer($id) {
+        return $this->db->getData("SELECT * FROM payments INNER JOIN `customers` ON payments.customerNumber = customers.customerNumber WHERE payments.customerNumber = $id");
     }
 
     /**
