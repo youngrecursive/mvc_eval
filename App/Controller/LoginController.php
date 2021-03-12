@@ -13,6 +13,9 @@ class LoginController extends Controller{
     {
 
       $LoginModel = new LoginModel();
+      $LoginModel->SelectLogin();
+      
+
       $this->render("login");
     }
 

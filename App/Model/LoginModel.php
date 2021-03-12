@@ -16,6 +16,7 @@ class LoginModel extends Model{
      *
      * @var string
      */
+    protected $table = "user";
 
     public function SelectLogin()
     {
@@ -23,5 +24,19 @@ class LoginModel extends Model{
 
         return $this->db->getData($statement,true);
     }
+
+    public function InsertLogin($l,$p)
+    {
+        $statement = "INSERT INTO user (email,password) VALUES ($l,$p) WHERE id = 2";
+
+        return $this->db->getData($statement,true);
+    }
+
+    public function getUserByEmail(string $email):object
+    {
+        $statement = "SELECT * FROM user WHERE email = '$email'";
+        return $this->db->getData($statement, true);
+    }
+
 
 }
