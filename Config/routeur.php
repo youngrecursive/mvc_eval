@@ -19,4 +19,8 @@ switch ($page) {
         $customer = new CustomerController();
         $customer->customer();
         break;
+    case 'detailcustomer':
+        $detailcustomer = new CustomerController();
+        $detailcustomer->detailCustomer();
+        break;
 }

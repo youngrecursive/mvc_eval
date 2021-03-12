@@ -18,4 +18,18 @@ class CustomerController extends Controller{
         $this->render("customer", ["customers" => $customers]);
     }
 
+    public function detailCustomer()
+    {
+      $detailcustomerModel = new CustomersModel();
+
+        if(!empty($_GET['id'])){
+          $id = $_GET['id'];
+        }
+        else {
+          die('404');
+        }
+        $customer = $detailcustomerModel->readOne($id);
+        $this->render("detailcustomer", ["customer" => $customer]);
+    }
+
 }

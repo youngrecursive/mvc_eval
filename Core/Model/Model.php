@@ -65,7 +65,8 @@ class Model{
     public function readOne(int $id):object
     {
 
-        return $this->db->getData("SELECT * FROM $this->table WHERE id = $id", true);
+        return $this->db->getData("SELECT * FROM $this->table WHERE customerNumber = $id", true);
+        
     }
 
     /**
